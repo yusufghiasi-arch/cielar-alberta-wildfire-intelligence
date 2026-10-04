@@ -1,0 +1,288 @@
+{
+  "ensembleMetrics": [
+    {
+      "target_year": 2023,
+      "temporal_split": "validation",
+      "n": 165624,
+      "positives": 10552,
+      "prevalence": 0.0637105733468579,
+      "average_precision": 0.218104302689482,
+      "roc_auc": 0.7316302561829872,
+      "mean_model_std": 0.0483482368290424
+    },
+    {
+      "target_year": 2024,
+      "temporal_split": "test",
+      "n": 165624,
+      "positives": 3313,
+      "prevalence": 0.0200031396415978,
+      "average_precision": 0.0761013777391926,
+      "roc_auc": 0.849076425544851,
+      "mean_model_std": 0.0449572019279003
+    },
+    {
+      "target_year": 2025,
+      "temporal_split": "test",
+      "n": 165624,
+      "positives": 2580,
+      "prevalence": 0.0155774525431096,
+      "average_precision": 0.0360683218181367,
+      "roc_auc": 0.7272934860975371,
+      "mean_model_std": 0.0546092502772808
+    }
+  ],
+  "capture": [
+    {
+      "top_fraction": 0.01,
+      "cells_selected": 1657,
+      "event_capture": 0.0696550416982562,
+      "lift_vs_baseline": 6.962309370085694,
+      "target_year": 2023
+    },
+    {
+      "top_fraction": 0.05,
+      "cells_selected": 8282,
+      "event_capture": 0.2309514783927217,
+      "lift_vs_baseline": 4.618583392576207,
+      "target_year": 2023
+    },
+    {
+      "top_fraction": 0.1,
+      "cells_selected": 16563,
+      "event_capture": 0.3537717968157695,
+      "lift_vs_baseline": 3.537589813186924,
+      "target_year": 2023
+    },
+    {
+      "top_fraction": 0.2,
+      "cells_selected": 33125,
+      "event_capture": 0.5390447308567097,
+      "lift_vs_baseline": 2.6952073812350696,
+      "target_year": 2023
+    },
+    {
+      "top_fraction": 0.01,
+      "cells_selected": 1657,
+      "event_capture": 0.0398430425596136,
+      "lift_vs_baseline": 3.982476814057604,
+      "target_year": 2024
+    },
+    {
+      "top_fraction": 0.05,
+      "cells_selected": 8282,
+      "event_capture": 0.1913673407787503,
+      "lift_vs_baseline": 3.82697711291231,
+      "target_year": 2024
+    },
+    {
+      "top_fraction": 0.1,
+      "cells_selected": 16563,
+      "event_capture": 0.4551765771204346,
+      "lift_vs_baseline": 4.551600882025893,
+      "target_year": 2024
+    },
+    {
+      "top_fraction": 0.2,
+      "cells_selected": 33125,
+      "event_capture": 0.7383036522789013,
+      "lift_vs_baseline": 3.6914959729823615,
+      "target_year": 2024
+    },
+    {
+      "top_fraction": 0.01,
+      "cells_selected": 1657,
+      "event_capture": 0.0410852713178294,
+      "lift_vs_baseline": 4.1066427137864725,
+      "target_year": 2025
+    },
+    {
+      "top_fraction": 0.05,
+      "cells_selected": 8282,
+      "event_capture": 0.1282945736434108,
+      "lift_vs_baseline": 2.565643620516334,
+      "target_year": 2025
+    },
+    {
+      "top_fraction": 0.1,
+      "cells_selected": 16563,
+      "event_capture": 0.2368217054263565,
+      "lift_vs_baseline": 2.368131264839394,
+      "target_year": 2025
+    },
+    {
+      "top_fraction": 0.2,
+      "cells_selected": 33125,
+      "event_capture": 0.4341085271317829,
+      "lift_vs_baseline": 2.1705295304958314,
+      "target_year": 2025
+    }
+  ],
+  "seeds": [
+    {
+      "seed": 101,
+      "best_epoch": 2,
+      "ap_2023": 0.17749733427281095,
+      "auc_2023": 0.7144187080712754,
+      "ap_2024": 0.0880346566170696,
+      "auc_2024": 0.851666406709654,
+      "ap_2025": 0.03431559199274634,
+      "auc_2025": 0.7180625197193167
+    },
+    {
+      "seed": 203,
+      "best_epoch": 4,
+      "ap_2023": 0.20826065889702716,
+      "auc_2023": 0.6601701076217046,
+      "ap_2024": 0.045421482775831905,
+      "auc_2024": 0.7606038671632057,
+      "ap_2025": 0.03512747724072483,
+      "auc_2025": 0.6278937615926761
+    },
+    {
+      "seed": 307,
+      "best_epoch": 3,
+      "ap_2023": 0.2121133994965524,
+      "auc_2023": 0.7024004900108325,
+      "ap_2024": 0.11813096383425695,
+      "auc_2024": 0.8203726412443728,
+      "ap_2025": 0.02948665056730625,
+      "auc_2025": 0.7280981423856859
+    },
+    {
+      "seed": 409,
+      "best_epoch": 1,
+      "ap_2023": 0.17771883879366435,
+      "auc_2023": 0.7524217192358219,
+      "ap_2024": 0.08239373260845048,
+      "auc_2024": 0.8545795267179849,
+      "ap_2025": 0.037831555432612296,
+      "auc_2025": 0.739353033346779
+    },
+    {
+      "seed": 503,
+      "best_epoch": 4,
+      "ap_2023": 0.16708061774305566,
+      "auc_2023": 0.6507139710342578,
+      "ap_2024": 0.06435621195136489,
+      "auc_2024": 0.8231414637712147,
+      "ap_2025": 0.036065299070250634,
+      "auc_2025": 0.7503181977414572
+    }
+  ],
+  "xgboost": [
+    {
+      "target_year": 2023,
+      "average_precision": 0.1521061488184432,
+      "roc_auc": 0.6628248843032967,
+      "balanced_accuracy": 0.6622742651450889,
+      "f1": 0.2399786804059606,
+      "precision": 0.1567131710995736,
+      "recall": 0.5120356330553449,
+      "brier": 0.0658243539647836
+    },
+    {
+      "target_year": 2024,
+      "average_precision": 0.0449488081606629,
+      "roc_auc": 0.716803910536506,
+      "balanced_accuracy": 0.602327599233887,
+      "f1": 0.0740572079123381,
+      "precision": 0.0408836653887247,
+      "recall": 0.3926954421974041,
+      "brier": 0.0358627632992197
+    },
+    {
+      "target_year": 2025,
+      "average_precision": 0.0189696832460523,
+      "roc_auc": 0.5492586178762988,
+      "balanced_accuracy": 0.4760972498221339,
+      "f1": 0.0269367300062643,
+      "precision": 0.0139376586894279,
+      "recall": 0.4,
+      "brier": 0.0357186397525443
+    }
+  ],
+  "architecture": {
+    "model": "Temporal Transformer ensemble",
+    "ensembleMembers": 5,
+    "sequenceLengthMonths": 24,
+    "weatherChannels": 11,
+    "dModel": 64,
+    "attentionHeads": 4,
+    "encoderLayers": 2,
+    "feedForwardDim": 128,
+    "dropout": 0.1,
+    "optimizer": "AdamW",
+    "learningRate": 0.0002,
+    "weightDecay": 0.0001,
+    "loss": "BCEWithLogitsLoss with sqrt class-imbalance positive weight",
+    "earlyStopping": "Validation Average Precision, patience = 5 epochs"
+  },
+  "dataDesign": {
+    "grid": "2 km Alberta grid",
+    "cellsPerYear": 165624,
+    "trainingRows": 1159368,
+    "validationRows": 165624,
+    "testRows": 331248,
+    "trainingYears": "2016\u20132022",
+    "validationYear": "2023",
+    "testYears": "2024\u20132025",
+    "target": "At least 5% of a 2-km cell burned in target year",
+    "antecedentWindow": "24 months ending Dec 31 before target year",
+    "weatherChannels": [
+      "2 m temperature",
+      "VPD",
+      "10 m wind speed",
+      "monthly precipitation",
+      "monthly snowfall",
+      "snow water equivalent",
+      "soil water layer 1",
+      "soil water layer 2",
+      "soil water layer 3",
+      "potential evaporation",
+      "water balance"
+    ],
+    "otherPredictors": [
+      "Archived 2014 FBP fuel type",
+      "NBAC fire-history features",
+      "CDEM terrain/elevation/slope",
+      "Latitude/longitude and static landscape context"
+    ]
+  },
+  "riskBands": [
+    {
+      "label": "Low",
+      "min": 0,
+      "max": 50
+    },
+    {
+      "label": "Moderate",
+      "min": 50,
+      "max": 80
+    },
+    {
+      "label": "Elevated",
+      "min": 80,
+      "max": 90
+    },
+    {
+      "label": "High",
+      "min": 90,
+      "max": 95
+    },
+    {
+      "label": "Very High",
+      "min": 95,
+      "max": 99
+    },
+    {
+      "label": "Extreme",
+      "min": 99,
+      "max": 100
+    }
+  ],
+  "notes": {
+    "risk": "Within-year Alberta relative wildfire-risk percentile. Not a calibrated annual probability.",
+    "agreement": "Agreement across five independently initialized Transformer models.",
+    "testCaveat": "2024 and 2025 are retrospective out-of-time benchmark years for Benchmark v1. They should not be repeatedly tuned against."
+  }
+}
