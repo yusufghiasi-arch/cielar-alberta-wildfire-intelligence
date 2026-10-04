@@ -171,34 +171,84 @@
   ],
   "xgboost": [
     {
-      "target_year": 2023,
+      "n": 165624,
+      "positives": 10552,
+      "prevalence": 0.0637105733468579,
+      "threshold": 0.1530827432870865,
       "average_precision": 0.1521061488184432,
       "roc_auc": 0.6628248843032967,
       "balanced_accuracy": 0.6622742651450889,
       "f1": 0.2399786804059606,
       "precision": 0.1567131710995736,
       "recall": 0.5120356330553449,
-      "brier": 0.0658243539647836
+      "brier": 0.0658243539647836,
+      "logloss": 0.2680172350781168,
+      "predicted_positive_rate": 0.2081642757088344,
+      "mean_probability": 0.1495260229666313,
+      "target_year": 2023,
+      "temporal_split": "validation"
     },
     {
-      "target_year": 2024,
+      "n": 165624,
+      "positives": 3313,
+      "prevalence": 0.0200031396415978,
+      "threshold": 0.1530827432870865,
       "average_precision": 0.0449488081606629,
       "roc_auc": 0.716803910536506,
       "balanced_accuracy": 0.602327599233887,
       "f1": 0.0740572079123381,
       "precision": 0.0408836653887247,
       "recall": 0.3926954421974041,
-      "brier": 0.0358627632992197
+      "brier": 0.0358627632992197,
+      "logloss": 0.1944472470224509,
+      "predicted_positive_rate": 0.1921339902429599,
+      "mean_probability": 0.1481551166880424,
+      "target_year": 2024,
+      "temporal_split": "test"
     },
     {
-      "target_year": 2025,
+      "n": 165624,
+      "positives": 2580,
+      "prevalence": 0.0155774525431096,
+      "threshold": 0.1530827432870865,
       "average_precision": 0.0189696832460523,
       "roc_auc": 0.5492586178762988,
       "balanced_accuracy": 0.4760972498221339,
       "f1": 0.0269367300062643,
       "precision": 0.0139376586894279,
       "recall": 0.4,
-      "brier": 0.0357186397525443
+      "brier": 0.0357186397525443,
+      "logloss": 0.1976533302336099,
+      "predicted_positive_rate": 0.4470608124426412,
+      "mean_probability": 0.1571298298065058,
+      "target_year": 2025,
+      "temporal_split": "test"
+    }
+  ],
+  "confidenceSummary": [
+    {
+      "year": 2023,
+      "mean": 78.25424194335938,
+      "median": 79.90435791015625,
+      "p10": 63.75346412658691,
+      "p90": 90.96435317993163,
+      "top10_all5_vote_fraction": 0.23443820563907505
+    },
+    {
+      "year": 2024,
+      "mean": 78.68858337402344,
+      "median": 79.38197326660156,
+      "p10": 66.23940658569336,
+      "p90": 90.63130950927734,
+      "top10_all5_vote_fraction": 0.2614864456922055
+    },
+    {
+      "year": 2025,
+      "mean": 83.06555938720703,
+      "median": 83.66178894042969,
+      "p10": 73.71250915527344,
+      "p90": 92.03472900390625,
+      "top10_all5_vote_fraction": 0.27587247916918245
     }
   ],
   "architecture": {
@@ -248,41 +298,8 @@
       "Latitude/longitude and static landscape context"
     ]
   },
-  "riskBands": [
-    {
-      "label": "Low",
-      "min": 0,
-      "max": 50
-    },
-    {
-      "label": "Moderate",
-      "min": 50,
-      "max": 80
-    },
-    {
-      "label": "Elevated",
-      "min": 80,
-      "max": 90
-    },
-    {
-      "label": "High",
-      "min": 90,
-      "max": 95
-    },
-    {
-      "label": "Very High",
-      "min": 95,
-      "max": 99
-    },
-    {
-      "label": "Extreme",
-      "min": 99,
-      "max": 100
-    }
-  ],
-  "notes": {
-    "risk": "Within-year Alberta relative wildfire-risk percentile. Not a calibrated annual probability.",
-    "agreement": "Agreement across five independently initialized Transformer models.",
-    "testCaveat": "2024 and 2025 are retrospective out-of-time benchmark years for Benchmark v1. They should not be repeatedly tuned against."
+  "methodology": {
+    "riskConfidence": "Each seed's raw score is converted to a within-year Alberta percentile rank. Confidence is 100 minus twice the mean absolute difference between the five seed percentiles and the ensemble percentile, clipped to 0\u2013100. It is an ensemble-stability index, not a probability or statistical confidence interval.",
+    "observedImpact": "Retrospective NBAC burned-area fraction within each 2-km cell."
   }
 }
